@@ -3,6 +3,7 @@ import Link from "next/link";
 import { cookies } from "next/headers";
 import { sair } from "@/app/acoes";
 import "./globals.css";
+import Rodape from "./components/rodape";
 
 
 export const metadata = {
@@ -55,6 +56,7 @@ export default function Layout({ children }) {
         <main className="mx-auto max-w-4xl p-4">
           {children}
         </main>
+        <Rodape />
       </body>
     </html>
   );
